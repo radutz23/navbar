@@ -1,0 +1,128 @@
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    /*margin-top: 1rem;*/
+}
+
+span {
+    color: white;
+    position: relative;
+    top: 0.45rem;
+    display: none;
+    text-decoration: none;
+    font-family: century gothic;
+}
+
+.navbar {
+    background: rgb(34 35 42);
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4rem;
+    padding-left: 0;
+    z-index: 2;
+    transition: all 0.25s;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    position: absolute;
+    left: 5%;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+ul.navbar-nav {
+    padding-left: 0;
+    text-align: center;
+    /*position: relative;*/
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.navbar:hover {
+    width: 20%;
+}
+
+.navbar:hover~span {
+    display: inline;
+}
+
+nav ul li:hover {
+    background-color: rgb(23 23 28);
+}
+
+li.nav-item,
+li.logo {
+    padding: 1rem 0 1rem 0;
+}
+
+li.logo {
+    background-color: rgb(13 12 12);
+}
+
+li.nav-item:hover svg,
+li.logo:hover svg,
+li.nav-item:hover a,
+li.logo:hover a {
+    filter: invert(44%) sepia(94%) saturate(7326%) hue-rotate(315deg) brightness(100%) contrast(102%);
+}
+
+.navbar:hover span {
+    display: inline;
+    margin-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.navbar:hover ul,
+ul.navbar-nav:hover {
+    text-align: left;
+}
+
+
+/*.navbar:hover a,
+ul.navbar-nav:hover a {
+    position: relative;
+    left: 1rem;
+}*/
+
+li:last-of-type {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+ul.navbar-nav:hover li:last-of-type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.navbar:hover .logo svg {
+    display: none;
+}
+
+.navbar:hover .logo span {
+    top: 0;
+    margin: 0 auto;
+}
+
+.navbar:hover .logo {
+    min-height: calc(60.44px - 2rem);
+}
